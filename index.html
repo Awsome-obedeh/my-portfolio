@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obed Chidera</title>
+  <title>Obed Chidera Portfolio </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body class="light-mod">
   <header class="header container">
     <nav>
       <ul class="header__menu">
@@ -27,14 +27,7 @@
         <li class="header__line"></li>
         <!-- <li><i class="bi bi-brightness-alt-high-fill"></i></li> -->
         <li>
-          <button class="header__sun">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
-              <path
-                d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z" />
-            </svg>
-          </button>
+          
         </li>
 
         <li>
@@ -43,19 +36,33 @@
       </ul>
 
       <button class="header__hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
+        <i class="bi bi-list"></i>
       </button>
     </nav>
   </header>
 
+  <!-- start of mobile nav -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li><a href="#home" class="mobile-nav__link">Home</a></li>
+        <li><a href="#about" class="mobile-nav__link">About</a></li>
+        <li><a href="#featured" class="mobile-nav__link">My Projects</a></li>
+        <li><a href="#contact" class="mobile-nav__link">Reach Me</a></li>
+        <li>
+         
+        </li>
+        <li> <a href="#" class="header__resume btn">Download CV </a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end of mobile nav -->
+
   <!-- hero section start -->
-  <section class="container hero">
+  <section class="container hero" id="home">
     <div class="holder">
-      <div class="hero__img-holder"><img src="/public/my-profile.jpg" alt="profile public" class="hero__img"></div>
+      <div class="hero__img-holder"><img src="
+        /my-profile.jpg" alt="profile public" class="hero__img"></div>
 
     </div>
     <h2 class="hero__subtitle">Hi, i'm Obed Chidera </h2>
@@ -64,13 +71,14 @@
       in building stunning, high performance and highly interactive Websites/Applications
     </p>
 
-    <button class=" hero__btn btn">Reach Out</button>
+    <button class="hero__btn btn"> <a href="mailto:obedchidera1010@gmail.com" target="_blank">Reach Me </a></button>
 
   </section>
 
   <!-- about section-->
-  <section class="about container section ">
-    <div class="about__img"><img src="/public/my-profile.jpg" alt=""></div>
+  <section class="about container section " id="about">
+    <div class="about__img"><img src="
+      /my-profile.jpg" alt=""></div>
 
     <div class="about__me">
       <h1 class="about__title">About Me</h1>
@@ -116,11 +124,12 @@
 
   <!-- projects -->
 
-  <section class="container">
+  <section class="container" id="featured">
     <h3 class="project__title">projects I have Worked On</h3>
     <div class="projects">
       <div class="project__img-holder">
-        <img src="/public/discord.png" alt="project snapshoot" class="project__sample">
+        <img src="
+        /discord.png" alt="project snapshoot" class="project__sample">
       </div>
 
       <div class="project__content">
@@ -128,7 +137,7 @@
         <p class="project__description">A simple clone of the website "uringpi" built using HTML and CSS.</p>
 
         <ul class="project__technologies">
-          <li class="project__technology">  Html</li>
+          <li class="project__technology"> Html</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
@@ -144,14 +153,14 @@
 
     <!-- project  2  -->
     <div class="projects">
-     
+
 
       <div class="project__content">
         <h3 class="project__featured">Featured Project</h3>
         <p class="project__description">A simple clone of the website "uringpi" built using HTML and CSS.</p>
 
         <ul class="project__technologies">
-          <li class="project__technology">  Html</li>
+          <li class="project__technology"> Html</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
@@ -165,14 +174,16 @@
       </div>
 
       <div class="project__img-holder">
-        <img src="/public/discord.png" alt="project snapshoot" class="project__sample">
+        <img src="
+        /discord.png" alt="project snapshoot" class="project__sample">
       </div>
     </div>
 
     <!-- project 3 -->
     <div class="projects">
       <div class="project__img-holder">
-        <img src="/public/discord.png" alt="project snapshoot" class="project__sample">
+        <img src="
+        /discord.png" alt="project snapshoot" class="project__sample">
       </div>
 
       <div class="project__content">
@@ -180,7 +191,7 @@
         <p class="project__description">A simple clone of the website "uringpi" built using HTML and CSS.</p>
 
         <ul class="project__technologies">
-          <li class="project__technology">  Html</li>
+          <li class="project__technology"> Html</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
           <li class="project__technology">Angular</li>
@@ -193,8 +204,30 @@
         </ul>
       </div>
     </div>
-
+    <button class="btn project__btn">Load more </button>
   </section>
+
+  <section class="container contact section" id="contact">
+    <h2 class="contact__title">Get In Contact With Me</h2>
+    <p class="contact__description">
+      Have some work you need done? Hit that message button or contact me through any of the social links below,<br> I
+      would love to hear from you.
+    </p>
+    <button class="contact__btn btn"> <a href="mailto:obedchidera1010@gmail.com" target="_blank">Reach Me </a></button>
+
+    <div class="socials">
+      <a href=""  class="my-link"><i class= "my-links bi bi-whatsapp"></i></a>
+      <a href="" class="my-link"> <i class= "my-links bi bi-twitter"></i></a>
+      <a href="" class="my-link"> <i class= "my-links bi bi-facebook"></i></a>
+      <a href="" class="my-link"><i class= "my-links bi bi-linkedin"></i></a>
+
+      
+               
+               
+                
+    </div>
+  </section>
+
 
   <script type="module" src="/main.js"></script>
 </body>
