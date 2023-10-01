@@ -87,7 +87,7 @@ button{
 }
 .header{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -466,7 +466,7 @@ button{
         display: flex;
         align-items: center;
         list-style: none;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         padding: 0;
         gap:2rem
     }
