@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obed Chidera Portfolio </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 
@@ -62,7 +63,7 @@
   <!-- hero section start -->
   <section class="container hero" id="home">
     <div class="holder">
-      <div class="hero__img-holder"><img src="
+      <div class="hero__img-holder" data-aos="fade-down" data-aos-duration="3000"><img src="
         https://res.cloudinary.com/dvl2juial/image/upload/v1696120099/portfolio/portfolio-1_ibqyc3.jpg" alt="profile public" class="hero__img"></div>
 
     </div>
@@ -78,19 +79,20 @@
 
   <!-- about section-->
   <section class="about container section " id="about">
-    <div class="about__img"><img src="
-      https://res.cloudinary.com/dvl2juial/image/upload/v1696120099/portfolio/portfolio-2_ilcs15.jpg" alt=""></div>
+    <div class="about__img" data-aos="fade-right" data-aos-duration="2000"><img src="
+      https://res.cloudinary.com/dvl2juial/image/upload/v1696120099/portfolio/portfolio-2_ilcs15.jpg" alt="">
+    </div>
 
-    <div class="about__me">
+    <div class="about__me" data-aos="fade-left" data-aos-duration="3000">
       <h1 class="about__title">About Me</h1>
-      <p class="about__description">Hey there digital wanderer !👋 I'm Obed, I am a software engineer I make computers
+      <p class="about__description">Hey there digital wanderer !👋 I'm Obed, I am a software engineer, I make computers
         perform certain tasks.</p>
       <p class="about__description">People who know me and work with me say I'm fixated, and that's accurate. I'm highly
-        motivated and i love learning new stuffs.</p>
+        motivated and I love learning new stuffs.</p>
       <p class="about__description">I am currently venturing into the world of Cloud Computing and Amazon Web Services.
-        I Love JavaScript🥰 , PHP and relational and non-relational databases, I am also a React fan
+        I Love JavaScript🥰 , PHP and relational and non-relational databases, I am also a React fan.
         If I'm not making computers perform tasks or making life easier by building softwares and applications,
-        I relish a good manga read or animie, playing tennis or Football</p>
+        I relish a good manga read, watching animie, playing tennis or Football</p>
 
       <h3 class="about__subtitle">My Skill Sets</h3>
       <div class="about__skill-container">
@@ -128,12 +130,12 @@
   <section class="container" id="featured">
     <h3 class="project__title">projects I have Worked On</h3>
     <div class="projects">
-      <div class="project__img-holder">
+      <div class="project__img-holder" data-aos="zoom-out" data-aos-duration="3000">
         <img src="
         /public/discord.png" alt="project snapshoot" class="project__sample">
       </div>
 
-      <div class="project__content">
+      <div class="project__content" data-aos="fade-down" data-aos-duration="2000">
         <h3 class="project__featured">Featured Project</h3>
         <p class="project__description">A simple clone of the website "uringpi" built using HTML and CSS.</p>
 
@@ -228,8 +230,12 @@
     </div>
   </section>
 
-
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+   
+
+   AOS.init();
+
   
   let hamBurger= document.querySelector('.header__hamburger');
   let mobileNav=document.querySelector('.mobile-nav');
