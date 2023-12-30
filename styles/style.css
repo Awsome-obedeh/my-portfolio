@@ -30,6 +30,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    /* border:1px solid red */
+
 }
 a{
     color:var(--clr-white)
